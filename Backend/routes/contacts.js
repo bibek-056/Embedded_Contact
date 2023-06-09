@@ -46,7 +46,7 @@ router.post('/', async (req, res) => {
             res.status(400).json({ error: error.message });
         }
     const contact = await Contact.create({ name, whatsApp, messenger, email, contactNo, whatsAppQR, messengerQR });
-    res.status(200).json(contact);
+    res.status(200).json(contact._id);
     } catch (error) {
     console.error('Error creating contact:', error);
     res.status(400).json({ error: error.message });
