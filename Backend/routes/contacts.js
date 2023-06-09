@@ -3,7 +3,9 @@ const Contact = require('../models/contactModel')
 const router = express.Router()
 const mongoose = require('mongoose')
 
-
+router.get('/', async (req, res) => {
+    return res.status(200).json({message: 'Hello Server'})
+})
 
 router.post('/', async (req, res) => {
     const {name, whatsApp, messenger, email, contactNo} = req.body
