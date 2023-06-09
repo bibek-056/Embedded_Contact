@@ -10,7 +10,7 @@ const chatBox = express();
 chatBox.use(bodyParser.json());
 
 //routes 
-chatBox.use('/api/contact', contactRoutes)
+chatBox.use('/', contactRoutes)
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
