@@ -22,14 +22,6 @@ const contactSchema = new Schema ({
     contactNo: {
         type: Number,
         required: true
-    },
-    whatsAppQR: {
-        type: String,
-        required: true
-    },
-    messengerQR: {
-        type: String,
-        required: true
     }
 })
 
